@@ -62,7 +62,6 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
           <span>© {year} Dr. Sekar Tamilperuvalathan · Government College of Technology, Coimbatore</span>
-          <span className="footer__bottom-right">Tamil Nadu Educational Services</span>
         </div>
       </div>
     </footer>
