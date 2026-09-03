@@ -1,0 +1,375 @@
+/* ── ACADEMIC PROFILE CARDS ─────────────── */
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card--scholar { border-left-color: #4285f4; }
+.profile-card--scopus  { border-left-color: #e9711c; }
+.profile-card--wos     { border-left-color: #c00; }
+
+.profile-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.profile-card__icon {
+  font-size: 2.2rem;
+  flex-shrink: 0;
+}
+
+.profile-card__body {
+  flex: 1;
+}
+
+.profile-card__name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.25rem;
+}
+
+.profile-card__desc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.profile-card__stat {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: rgba(200,151,58,0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+.profile-card__arrow {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  transition: all var(--transition);
+}
+
+.profile-card:hover .profile-card__arrow {
+  color: var(--navy);
+  transform: translate(3px, -3px);
+}
+
+/* ── HIGHLIGHT CARDS ───────────────────── */
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.highlight-card {
+  border-top: 3px solid var(--accent);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.highlight-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.publisher-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+}
+
+.publisher-badge--springer {
+  background: #e8f0fe;
+  color: #1a56d6;
+}
+
+.publisher-badge--elsevier {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.publisher-badge--emerald,
+.publisher-badge--taylor-&-francis,
+.publisher-badge--crc-press-\/-taylor-\&-francis {
+  background: #f3e8ff;
+  color: #6d28d9;
+}
+
+.highlight-card__title {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.5;
+}
+
+.highlight-card__journal {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.highlight-card__doi {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.highlight-card__doi span {
+  font-family: monospace;
+  color: var(--slate);
+}
+
+.highlight-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+/* ── CATALOG ──────────────────────────── */
+.catalog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.25rem;
+}
+
+.filter-bar__label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.filter-bar__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.filter-tag {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.filter-tag:hover {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.filter-tag--active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+
+/* Publication list items */
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.pub-item {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.1rem 1.4rem;
+}
+
+.pub-item__year {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--accent);
+  background: rgba(200,151,58,0.1);
+  padding: 0.3rem 0.5rem;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  align-self: flex-start;
+  margin-top: 0.15rem;
+}
+
+.pub-item__title {
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+  line-height: 1.45;
+}
+
+.pub-item__journal {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 0.2rem;
+}
+
+.pub-item__doi {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: monospace;
+  margin-bottom: 0.4rem;
+}
+
+.pub-item__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.pagination__btn {
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.pagination__btn:hover:not(:disabled) {
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.pagination__btn--active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+
+.pagination__btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pub-catalog-note {
+  font-size: 0.83rem;
+  color: var(--text-muted);
+  background: var(--bg);
+  padding: 0.9rem 1.2rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  line-height: 1.6;
+}
+
+.pub-catalog-note a {
+  color: var(--navy);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* ── BOOKS ─────────────────────────────── */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.1rem;
+}
+
+.book-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 1.4rem;
+}
+
+.book-card__icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.book-card__title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+}
+
+.book-card__publisher {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.book-card__isbn {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: monospace;
+}
+
+/* ── RESPONSIVE ─────────────────────────── */
+@media (max-width: 900px) {
+  .profiles-grid {
+    grid-template-columns: 1fr;
+  }
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .pub-item {
+    grid-template-columns: 1fr;
+  }
+  .pub-item__year {
+    align-self: auto;
+    display: inline-block;
+    width: fit-content;
+  }
+}

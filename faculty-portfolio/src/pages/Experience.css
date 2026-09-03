@@ -1,0 +1,303 @@
+/* ── TEACHING STATS ────────────────────── */
+.exp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.exp-stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.exp-stat-card:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
+.exp-stat-card:hover .exp-stat-value,
+.exp-stat-card:hover .exp-stat-label {
+  color: #fff;
+}
+
+.exp-stat-icon {
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.exp-stat-value {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+  transition: color var(--transition);
+}
+
+.exp-stat-label {
+  font-size: 0.83rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+/* ── PHD GUIDANCE ──────────────────────── */
+.phd-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.phd-col__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1rem;
+}
+
+.phd-col__header--graduated {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #fff;
+}
+
+.phd-col__header--guiding {
+  background: linear-gradient(135deg, var(--slate) 0%, var(--slate-light) 100%);
+  color: #fff;
+}
+
+.phd-col__count {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent-light);
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.phd-col__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.15rem;
+}
+
+.phd-col__sub {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.phd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.phd-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+}
+
+.phd-item__num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.phd-item__body {
+  flex: 1;
+}
+
+.phd-item__topic {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.45;
+  margin-bottom: 0.4rem;
+}
+
+.phd-item__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* ── PG/UG PROJECTS ────────────────────── */
+.projects-bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.project-bar-item__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-bar-item__icon {
+  font-size: 1.1rem;
+}
+
+.project-bar-item__label {
+  flex: 1;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.project-bar-item__count {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 32px;
+  text-align: right;
+}
+
+.project-bar-item__track {
+  height: 8px;
+  background: var(--bg);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.project-bar-item__fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light));
+  border-radius: 999px;
+  transition: width 0.8s ease;
+}
+
+/* ── ADMIN ROLES ───────────────────────── */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.admin-card {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.admin-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.admin-card__icon {
+  font-size: 1.5rem;
+}
+
+.admin-card__title {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+}
+
+.admin-card__org {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.admin-card__desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* ── SUBJECTS ──────────────────────────── */
+.subjects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.subject-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition);
+}
+
+.subject-chip:hover {
+  border-color: var(--navy);
+  background: var(--navy);
+}
+
+.subject-chip:hover .subject-chip__name,
+.subject-chip:hover .subject-chip__num {
+  color: #fff;
+}
+
+.subject-chip__num {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--text-muted);
+  transition: color var(--transition);
+  flex-shrink: 0;
+}
+
+.subject-chip__name {
+  font-size: 0.87rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: color var(--transition);
+}
+
+/* ── RESPONSIVE ─────────────────────────── */
+@media (max-width: 900px) {
+  .phd-columns {
+    grid-template-columns: 1fr;
+  }
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+  .exp-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .exp-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .projects-bar-list {
+    padding: 1.25rem;
+  }
+}
