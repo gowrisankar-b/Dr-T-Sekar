@@ -3,10 +3,10 @@ import profilePic from '../assets/profile_picture.jpeg'
 import cvFile from '../assets/cv.pdf'
 
 const metrics = [
-  { value: '27+', label: 'Years of Service', icon: '🏛️' },
-  { value: '10',  label: 'Granted Patents',  icon: '📜' },
-  { value: '90+', label: 'Journal Papers',   icon: '📝' },
-  { value: '11',  label: 'PhD Scholars',     icon: '🎓' },
+  { value: '27+', label: 'Years of Service'},
+  { value: '10',  label: 'Granted Patents'},
+  { value: '90+', label: 'Journal Papers'},
+  { value: '11',  label: 'PhD Scholars'},
 ]
 
 const education = [
@@ -15,22 +15,19 @@ const education = [
     institution: 'PSG College of Technology, Coimbatore',
     university: 'Bharathiar University',
     year: '1995–1999',
-    icon: '🎓',
   },
   {
     degree: 'M.E. Manufacturing Engineering',
     institution: 'Annamalai University',
     university: 'Annamalai University',
     year: '1999–2001',
-    badge: '🥇 Gold Medalist',
-    icon: '🎓',
+    badge: 'Gold Medalist',
   },
   {
     degree: 'Ph.D. Mechanical Engineering',
     institution: 'Anna University, Chennai',
     university: 'Anna University',
     year: '2008–2014',
-    icon: '🏅',
   },
 ]
 
@@ -74,7 +71,7 @@ export default function Home() {
               Department of Mechanical Engineering
             </p>
             <p className="hero__inst">
-              🏛 Government College of Technology (GCT), Coimbatore
+              Government College of Technology (GCT), Coimbatore
             </p>
 
             <p className="hero__summary">
@@ -85,8 +82,8 @@ export default function Home() {
             </p>
 
             <div className="hero__actions">
-              <a href="/research" className="btn btn-primary">View Research →</a>
-              <a href={cvFile} download="Dr_Sekar_Tamilperuvalathan_CV.pdf" className="btn btn-accent">⬇ Download CV</a>
+              <a href="/research" className="btn btn-primary">View Research</a>
+              <a href={cvFile} download="Dr_Sekar_Tamilperuvalathan_CV.pdf" className="btn btn-accent">Download CV</a>
             </div>
           </div>
         </div>
@@ -160,9 +157,6 @@ export default function Home() {
           <div className="timeline">
             {education.map((edu, i) => (
               <div key={i} className="timeline__item">
-                <div className="timeline__marker">
-                  <span>{edu.icon}</span>
-                </div>
                 <div className="timeline__content card">
                   <div className="timeline__year">{edu.year}</div>
                   <h3 className="timeline__degree">{edu.degree}</h3>

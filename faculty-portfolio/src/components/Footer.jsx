@@ -57,17 +57,6 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* CV Download */}
-        <div className="footer__col footer__cta-col">
-          <h4 className="footer__heading">Academic CV</h4>
-          <p className="footer__cta-text">
-            Download the complete academic profile including publications, patents, and research contributions.
-          </p>
-          <a href={cvFile} download="Dr_Sekar_Tamilperuvalathan_CV.pdf" className="btn btn-accent footer__download-btn">
-            ⬇ Download Full CV (PDF)
-          </a>
-        </div>
-
       </div>
 
       <div className="footer__bottom">

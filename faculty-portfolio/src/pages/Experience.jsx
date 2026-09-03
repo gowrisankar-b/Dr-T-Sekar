@@ -78,45 +78,41 @@ const adminRoles = [
     title: 'Officer-in-Charge — Examinations',
     org: 'Government College of Technology, Coimbatore',
     scope: 'Institutional',
-    icon: '📋',
     desc: 'Oversaw the complete examination administration for all UG and PG programmes at GCT, coordinating scheduling, invigilation, and results processing across departments.',
   },
   {
     title: 'IPR Coordinator',
     org: 'Government College of Technology, Coimbatore',
     scope: 'Institutional',
-    icon: '⚖️',
     desc: 'Manages all Intellectual Property Rights activities at GCT — guiding faculty and students through patent filing, design registration, and copyright processes with the Indian Patent Office.',
   },
   {
     title: '7.5% School-Topper Reservation Scheme',
     org: 'Department of Technical Education (DoTE), Chennai',
     scope: 'State-Level',
-    icon: '🏫',
     desc: 'Key coordinator in implementing Tamil Nadu\'s landmark 7.5% horizontal reservation policy for government school students in state engineering colleges — expanding access to quality technical education for rural and first-generation students.',
   },
   {
     title: 'First-Generation Graduate Waiver Scheme',
     org: 'Department of Technical Education (DoTE), Chennai',
     scope: 'State-Level',
-    icon: '🎓',
     desc: 'Contributed to designing and rolling out fee waiver eligibility criteria and processes for first-generation graduates pursuing technical education under DoTE, directly benefiting thousands of students across Tamil Nadu.',
   },
 ]
 
 const pgUgProjects = [
-  { category: 'M.E. Projects Supervised',    count: 30, icon: '🔬' },
-  { category: 'B.E. Final Year Projects',     count: 45, icon: '⚙️' },
-  { category: 'Industry-Collaborative Works', count: 10, icon: '🏭' },
-  { category: 'Inter-Disciplinary Projects',  count: 5,  icon: '🔗' },
-  { category: 'Funded Student Projects',       count: 3,  icon: '💡' },
+  { category: 'M.E. Projects Supervised',    count: 30},
+  { category: 'B.E. Final Year Projects',     count: 45},
+  { category: 'Industry-Collaborative Works', count: 10},
+  { category: 'Inter-Disciplinary Projects',  count: 5},
+  { category: 'Funded Student Projects',       count: 3},
 ]
 
 const teachingStats = [
-  { label: 'Years of Teaching',     value: '27+', icon: '🏛️' },
-  { label: 'PhD Scholars Guided',   value: '11',  icon: '🎓' },
-  { label: 'PG/UG Projects',        value: '75+', icon: '📐' },
-  { label: 'Courses Taught',        value: '20+', icon: '📚' },
+  { label: 'Years of Teaching',     value: '27+'},
+  { label: 'PhD Scholars Guided',   value: '11'},
+  { label: 'PG/UG Projects',        value: '75+'},
+  { label: 'Courses Taught',        value: '20+'},
 ]
 
 const subjects = [

@@ -4,7 +4,6 @@ import './Publications.css'
 const academicProfiles = [
   {
     platform: 'Google Scholar',
-    icon: '🎓',
     description: 'Full citation index, h-index, and publication metrics',
     url: 'https://scholar.google.com',
     color: 'profile-card--scholar',
@@ -12,7 +11,6 @@ const academicProfiles = [
   },
   {
     platform: 'Scopus',
-    icon: '🔭',
     description: 'Scopus Author ID: 56152897600',
     url: 'https://www.scopus.com/authid/detail.uri?authorId=56152897600',
     color: 'profile-card--scopus',
@@ -20,7 +18,6 @@ const academicProfiles = [
   },
   {
     platform: 'Web of Science',
-    icon: '🌐',
     description: 'Web of Science Researcher ID: JOK-2774-2023',
     url: 'https://www.webofscience.com',
     color: 'profile-card--wos',
@@ -117,28 +114,24 @@ const books = [
     publisher: 'Springer',
     year: '2023',
     isbn: '978-3-030-XXXXX-X',
-    icon: '📗',
   },
   {
     title: 'Electrochemical Machining: Fundamentals and Applications',
     publisher: 'CRC Press / Taylor & Francis',
     year: '2022',
     isbn: '978-1-032-XXXXX-X',
-    icon: '📘',
   },
   {
     title: 'Bio-Polymer Composites for Biomedical Engineering',
     publisher: 'Elsevier',
     year: '2021',
     isbn: '978-0-128-XXXXX-X',
-    icon: '📙',
   },
   {
     title: 'Manufacturing Technology: A Practical Approach',
     publisher: 'PHI Learning',
     year: '2019',
     isbn: '978-81-203-XXXXX-X',
-    icon: '📕',
   },
 ]
 
